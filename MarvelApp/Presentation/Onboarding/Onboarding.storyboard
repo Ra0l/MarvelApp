@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="OnboardingViewController" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="M1b-LJ-ctC">
+                                <rect key="frame" x="0.0" y="59" width="393" height="637"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="vTm-I4-dnm">
+                                    <size key="itemSize" width="393" height="620"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardindCollectionViewCell" id="S1i-Jc-vBv" customClass="OnboardingCollectionViewCell" customModule="MarvelApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-3.6666666666666665" width="393" height="644"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5I5-ti-uTH">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="644"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="4QV-Do-jWm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="496"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="UKN-ZZ-wnw">
+                                                    <rect key="frame" x="15" y="496" width="363" height="133"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tune In to the Premiere!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AC4-Mf-QZD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="363" height="36.666666666666664"/>
+                                                            <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="30"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKx-Nj-Obx">
+                                                            <rect key="frame" x="0.0" y="51.666666666666622" width="363" height="81.333333333333314"/>
+                                                            <string key="text">We'll be LIVE from Hollywood for the Red Carpet World Premiere of 'Guardians of the Galaxy Vol. 3' at 8:15 p.m. ET / 5:15 p.m. PT on Thursday, April 27!</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UKN-ZZ-wnw" firstAttribute="top" secondItem="4QV-Do-jWm" secondAttribute="bottom" id="6gd-cA-yB1"/>
+                                                <constraint firstItem="UKN-ZZ-wnw" firstAttribute="leading" secondItem="5I5-ti-uTH" secondAttribute="leading" constant="15" id="EWi-Rv-eJ4"/>
+                                                <constraint firstAttribute="trailing" secondItem="UKN-ZZ-wnw" secondAttribute="trailing" constant="15" id="FDx-xI-rkm"/>
+                                                <constraint firstItem="4QV-Do-jWm" firstAttribute="leading" secondItem="5I5-ti-uTH" secondAttribute="leading" id="MqS-a0-q01"/>
+                                                <constraint firstAttribute="bottom" secondItem="UKN-ZZ-wnw" secondAttribute="bottom" constant="15" id="awq-KA-fxr"/>
+                                                <constraint firstAttribute="trailing" secondItem="4QV-Do-jWm" secondAttribute="trailing" id="b9s-Ys-k2l"/>
+                                                <constraint firstItem="4QV-Do-jWm" firstAttribute="top" secondItem="5I5-ti-uTH" secondAttribute="top" id="mY8-Kf-faD"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="393" height="644"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="4QV-Do-jWm" id="abY-ZZ-fOW"/>
+                                            <outlet property="lblDescription" destination="fKx-Nj-Obx" id="lSd-N1-CA3"/>
+                                            <outlet property="lblTitle" destination="AC4-Mf-QZD" id="ln3-C2-NiH"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnb-Ks-fgq">
+                                <rect key="frame" x="121.66666666666669" y="738" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.88627450980392153" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dsq-Tc-ul0"/>
+                                    <constraint firstAttribute="width" constant="150" id="mNY-II-hsS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNextAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gzT-3O-YiK"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="bjE-ig-kSD">
+                                <rect key="frame" x="138.66666666666666" y="696" width="115.66666666666666" height="26"/>
+                                <color key="pageIndicatorTintColor" red="0.95821171998977661" green="0.7785485808164424" blue="0.76394187555876669" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.8862745098" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M1b-LJ-ctC" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Do2-Lw-Edn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="vnb-Ks-fgq" secondAttribute="bottom" constant="40" id="HdL-LD-7pW"/>
+                            <constraint firstItem="bjE-ig-kSD" firstAttribute="centerX" secondItem="vnb-Ks-fgq" secondAttribute="centerX" id="Tk4-cy-hgx"/>
+                            <constraint firstItem="M1b-LJ-ctC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="aqe-pi-fJj"/>
+                            <constraint firstItem="M1b-LJ-ctC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="dud-GR-3gL"/>
+                            <constraint firstItem="bjE-ig-kSD" firstAttribute="top" secondItem="M1b-LJ-ctC" secondAttribute="bottom" id="iEd-M6-4r4"/>
+                            <constraint firstItem="vnb-Ks-fgq" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="oTC-bD-5Yc"/>
+                            <constraint firstItem="vnb-Ks-fgq" firstAttribute="top" secondItem="bjE-ig-kSD" secondAttribute="bottom" constant="16" id="pl0-a3-d5q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnNext" destination="vnb-Ks-fgq" id="sef-6I-NN9"/>
+                        <outlet property="collectionView" destination="M1b-LJ-ctC" id="MdJ-xR-d1H"/>
+                        <outlet property="pageControl" destination="bjE-ig-kSD" id="HvC-El-kze"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="4" width="633.29998779296875" height="439.60000610351562"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
