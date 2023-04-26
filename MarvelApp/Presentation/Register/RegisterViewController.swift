@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MUIKit
 
 class RegisterViewController: UIViewController {
 
