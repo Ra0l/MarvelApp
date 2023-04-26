@@ -45,6 +45,7 @@
 		F79F428329F772420072B4B7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79F428229F772420072B4B7 /* Login.storyboard */; };
 		F79F428529F7799A0072B4B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79F428429F7799A0072B4B7 /* ViewController.swift */; };
 		F79F428829F779A80072B4B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79F428629F779A80072B4B7 /* Main.storyboard */; };
+		F7D14BE329F99D2200624F6E /* MUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D14BE229F99D2200624F6E /* MUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		F79F428229F772420072B4B7 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F79F428429F7799A0072B4B7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F79F428729F779A80072B4B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7D14BE229F99D2200624F6E /* MUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8A6A40192698D928D6B514 /* Pods_MarvelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D14BE329F99D2200624F6E /* MUIKit.framework in Frameworks */,
 				63DB9AC28CFB1D0F1E2972DA /* Pods_MarvelApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +149,7 @@
 		92DB3B2E45196F66D7B806D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7D14BE229F99D2200624F6E /* MUIKit.framework */,
 				FD8A6A40192698D928D6B514 /* Pods_MarvelApp.framework */,
 				35E91E30512CA95B1A1ACA94 /* Pods_MarvelApp_MarvelAppUITests.framework */,
 				29833B6EFE4B34C7FC4D51B3 /* Pods_MarvelAppTests.framework */,
