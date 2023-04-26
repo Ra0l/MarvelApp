@@ -8,6 +8,17 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+        <array key="Comfortaa-Medium.ttf">
+            <string>Comfortaa-Medium</string>
+        </array>
+        <array key="Comfortaa-Regular.ttf">
+            <string>Comfortaa-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -16,14 +27,131 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="RBf-8j-tlT">
+                                <rect key="frame" x="16" y="506" width="361" height="156"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jbv-lF-y7H" customClass="EmailTextField" customModule="MarvelApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="MLQ-5v-M65"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="border_width">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TSe-5g-6Uo" customClass="PasswordTextField" customModule="MarvelApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="68" width="361" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="r5E-3V-ukM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="border_width">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXt-Np-lMA">
+                                        <rect key="frame" x="0.0" y="136" width="361" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="qW0-As-57O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Medium" family="Comfortaa" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="i70-ne-5wu">
+                                <rect key="frame" x="16" y="682" width="361" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQI-1U-nyy" customClass="ActionButton" customModule="MarvelApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="52"/>
+                                        <color key="backgroundColor" red="0.8862745098" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="xi5-WQ-Zvi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Login"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shape_cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tP4-wF-Kzs" customClass="ActionButton" customModule="MarvelApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="68" width="361" height="52"/>
+                                        <color key="backgroundColor" red="0.8862745098" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="02l-pT-Wg4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Register"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shape_cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnRegisterAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="AR7-ie-ib0"/>
+                                            <segue destination="w5i-MP-juD" kind="show" id="Rs1-w4-jj4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMz-Yl-7AU">
+                                <rect key="frame" x="16" y="103" width="361" height="70"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="87E-P0-5rU">
+                                <rect key="frame" x="126.66666666666669" y="193" width="140" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="ge1-uF-Gxp"/>
+                                    <constraint firstAttribute="width" constant="140" id="t6p-iD-Kkk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="87E-P0-5rU" firstAttribute="top" secondItem="TMz-Yl-7AU" secondAttribute="bottom" constant="20" id="ACZ-wc-Xcr"/>
+                            <constraint firstItem="RBf-8j-tlT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Cfs-OF-Egr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RBf-8j-tlT" secondAttribute="trailing" constant="16" id="P0s-9H-dvq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="i70-ne-5wu" secondAttribute="trailing" constant="16" id="ReN-Z8-ILe"/>
+                            <constraint firstItem="i70-ne-5wu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="eaf-bz-Srx"/>
+                            <constraint firstItem="TMz-Yl-7AU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="nL3-eq-vXJ"/>
+                            <constraint firstItem="TMz-Yl-7AU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="qQo-uh-eCE"/>
+                            <constraint firstItem="i70-ne-5wu" firstAttribute="top" secondItem="RBf-8j-tlT" secondAttribute="bottom" constant="20" id="ra3-Vg-cGe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TMz-Yl-7AU" secondAttribute="trailing" constant="16" id="tds-BT-N94"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="i70-ne-5wu" secondAttribute="bottom" constant="16" id="trq-dH-h01"/>
+                            <constraint firstItem="87E-P0-5rU" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="yjk-xE-bEn"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SOE-LH-sov"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1066.4122137404579" y="-2.1126760563380285"/>
+        </scene>
+        <!--LoginViewController-->
+        <scene sceneID="TqA-us-eub">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Register" referencedIdentifier="LoginViewController" id="w5i-MP-juD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6nR-aE-OvU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9j-45-99w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2141" y="5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0RY-lv-fWP">
@@ -44,7 +172,22 @@
             <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Jbv-lF-y7H">
+            <size key="intrinsicContentSize" width="62.666666666666664" height="34"/>
+        </designable>
+        <designable name="TSe-5g-6Uo">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+        <designable name="kQI-1U-nyy">
+            <size key="intrinsicContentSize" width="43" height="32"/>
+        </designable>
+        <designable name="tP4-wF-Kzs">
+            <size key="intrinsicContentSize" width="66" height="32"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="6" width="734.92999267578125" height="1135.9100341796875"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

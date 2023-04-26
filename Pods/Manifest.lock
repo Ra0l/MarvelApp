@@ -1,16 +1,20 @@
 PODS:
+  - IQKeyboardManagerSwift (6.5.11)
   - ProgressHUD (2.70)
 
 DEPENDENCIES:
+  - IQKeyboardManagerSwift
   - ProgressHUD
 
 SPEC REPOS:
   trunk:
+    - IQKeyboardManagerSwift
     - ProgressHUD
 
 SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
   ProgressHUD: e603e8b8622c47d8818b9fb38b3cfe9d3e7ca421
 
-PODFILE CHECKSUM: fafafa4abad09a4efecc74e7b438f2236435b633
+PODFILE CHECKSUM: 2da5fe991446c581017378beb490155986690689
 
 COCOAPODS: 1.12.0

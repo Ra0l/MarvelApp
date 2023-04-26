@@ -26,4 +26,7 @@ class LoginViewController: UIViewController {
     }
     */
 
+    @IBAction func btnRegisterAction(_ sender: Any) {
+        
+    }
 }

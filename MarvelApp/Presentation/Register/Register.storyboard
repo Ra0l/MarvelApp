@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+        <array key="Comfortaa-Regular.ttf">
+            <string>Comfortaa-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="Y6W-OH-hqX" customClass="RegisterViewController" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="vhq-oL-GdH">
+                                <rect key="frame" x="20" y="779" width="353" height="19"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKg-9b-ghm">
+                                        <rect key="frame" x="0.0" y="0.0" width="261.66666666666669" height="19"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrC-4h-KZz">
+                                        <rect key="frame" x="263.66666666666669" y="0.0" width="89.333333333333314" height="19"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
+                                        <color key="textColor" red="0.93538945740000001" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIX-x6-hGR" customClass="ActionButton" customModule="MarvelApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="697" width="353" height="52"/>
+                                <color key="backgroundColor" red="0.93538945740000001" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="iiR-Zw-uzE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sign up"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nbA-dk-efC">
+                                <rect key="frame" x="20" y="439" width="353" height="238"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qrp-Kw-kAh" customClass="EmailTextField" customModule="MarvelApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="GM1-Gm-RAZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="border_width">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Xu-Ua-tgn" customClass="UserTextField" customModule="MarvelApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="62" width="353" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="nn4-Ty-R1p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="border_width">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DEB-B8-3fv" customClass="PasswordTextField" customModule="MarvelApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="124" width="353" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="Zh9-Pf-aHB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="border_width">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bqb-Xd-zn3" customClass="PasswordTextField" customModule="MarvelApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="186" width="353" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="RnS-Xw-2fi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="border_width">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marvel App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlY-S7-w9m">
+                                <rect key="frame" x="16" y="59" width="361" height="67"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="vLj-PV-c5l">
+                                <rect key="frame" x="76.666666666666686" y="166" width="240" height="268"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="72i-ua-Y7I"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vhq-oL-GdH" secondAttribute="trailing" constant="20" id="1PO-zm-ron"/>
+                            <constraint firstItem="vLj-PV-c5l" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="6En-js-P7J"/>
+                            <constraint firstItem="IlY-S7-w9m" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="6gc-wO-O0m"/>
+                            <constraint firstItem="nbA-dk-efC" firstAttribute="top" secondItem="vLj-PV-c5l" secondAttribute="bottom" constant="5" id="7HE-qt-ahZ"/>
+                            <constraint firstItem="nbA-dk-efC" firstAttribute="leading" secondItem="uIX-x6-hGR" secondAttribute="leading" id="8fJ-pI-GB4"/>
+                            <constraint firstItem="IlY-S7-w9m" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="ATD-J0-J7s"/>
+                            <constraint firstItem="vLj-PV-c5l" firstAttribute="top" secondItem="IlY-S7-w9m" secondAttribute="bottom" constant="40" id="Bf3-eJ-LIJ"/>
+                            <constraint firstItem="vhq-oL-GdH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Dow-QB-g4v"/>
+                            <constraint firstItem="uIX-x6-hGR" firstAttribute="trailing" secondItem="vhq-oL-GdH" secondAttribute="trailing" id="Nic-Q4-Xqc"/>
+                            <constraint firstItem="nbA-dk-efC" firstAttribute="trailing" secondItem="uIX-x6-hGR" secondAttribute="trailing" id="Nq7-vh-BG5"/>
+                            <constraint firstItem="uIX-x6-hGR" firstAttribute="top" secondItem="nbA-dk-efC" secondAttribute="bottom" constant="20" id="SIO-7f-yKg"/>
+                            <constraint firstItem="uIX-x6-hGR" firstAttribute="leading" secondItem="vhq-oL-GdH" secondAttribute="leading" id="Xac-2H-WqC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IlY-S7-w9m" secondAttribute="trailing" constant="16" id="hU5-MH-iOQ"/>
+                            <constraint firstItem="vhq-oL-GdH" firstAttribute="top" secondItem="uIX-x6-hGR" secondAttribute="bottom" constant="30" id="lSq-K2-3qW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="vhq-oL-GdH" secondAttribute="bottom" constant="20" id="xaq-Mx-odr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblBack" destination="WrC-4h-KZz" id="iCN-jo-doL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="2Xu-Ua-tgn">
+            <size key="intrinsicContentSize" width="94" height="34"/>
+        </designable>
+        <designable name="DEB-B8-3fv">
+            <size key="intrinsicContentSize" width="90.333333333333329" height="34"/>
+        </designable>
+        <designable name="Qrp-Kw-kAh">
+            <size key="intrinsicContentSize" width="62.666666666666664" height="34"/>
+        </designable>
+        <designable name="bqb-Xd-zn3">
+            <size key="intrinsicContentSize" width="90.333333333333329" height="34"/>
+        </designable>
+        <designable name="uIX-x6-hGR">
+            <size key="intrinsicContentSize" width="59" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="3" width="1095.6600341796875" height="1095.6300048828125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

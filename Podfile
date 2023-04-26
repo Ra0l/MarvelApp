@@ -7,6 +7,7 @@ target 'MarvelApp' do
 
   # Pods for MarvelApp
    pod 'ProgressHUD'
+   pod "IQKeyboardManagerSwift"
 
   target 'MarvelAppTests' do
     inherit! :search_paths

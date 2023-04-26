@@ -10,7 +10,27 @@
 		56D84977BC9D54A749180F59 /* Pods_MarvelApp_MarvelAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E91E30512CA95B1A1ACA94 /* Pods_MarvelApp_MarvelAppUITests.framework */; };
 		63DB9AC28CFB1D0F1E2972DA /* Pods_MarvelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8A6A40192698D928D6B514 /* Pods_MarvelApp.framework */; };
 		D5B7A7AF05CF265DF1E309CF /* Pods_MarvelAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29833B6EFE4B34C7FC4D51B3 /* Pods_MarvelAppTests.framework */; };
+		F718054129F8C412008EE177 /* UserTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F718054029F8C412008EE177 /* UserTextField.swift */; };
 		F71853A429F6FE4F00DDE5F2 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71853A329F6FE4F00DDE5F2 /* Onboarding.storyboard */; };
+		F72B0C9D29F88C9F00A1D75B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B0C9C29F88C9F00A1D75B /* RegisterViewController.swift */; };
+		F72B0C9F29F88D2000A1D75B /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72B0C9E29F88D2000A1D75B /* Register.storyboard */; };
+		F72B0CA429F88F6F00A1D75B /* AMShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B0CA329F88F6F00A1D75B /* AMShape.swift */; };
+		F72B0CA629F88F7900A1D75B /* AMShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B0CA529F88F7900A1D75B /* AMShadow.swift */; };
+		F72B0CA829F88F8100A1D75B /* AMBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B0CA729F88F8100A1D75B /* AMBorder.swift */; };
+		F72B0CAE29F8942100A1D75B /* AMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B0CAD29F8942100A1D75B /* AMTextField.swift */; };
+		F72B0CB029F8948400A1D75B /* AMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B0CAF29F8948400A1D75B /* AMLabel.swift */; };
+		F72B0CB229F8949F00A1D75B /* AMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B0CB129F8949F00A1D75B /* AMView.swift */; };
+		F72B0CB429F894B100A1D75B /* AMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B0CB329F894B100A1D75B /* AMButton.swift */; };
+		F72B0CB729F8962400A1D75B /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B0CB629F8962400A1D75B /* ActionButton.swift */; };
+		F72B0CBA29F8964800A1D75B /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B0CB929F8964800A1D75B /* PasswordTextField.swift */; };
+		F72B0CBC29F8965200A1D75B /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B0CBB29F8965200A1D75B /* EmailTextField.swift */; };
+		F72B0CBE29F8965E00A1D75B /* GenericTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B0CBD29F8965E00A1D75B /* GenericTextField.swift */; };
+		F72B0CC029F8969900A1D75B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B0CBF29F8969900A1D75B /* ContentView.swift */; };
+		F72B0CC729F8A27300A1D75B /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F72B0CC229F8A27200A1D75B /* Comfortaa-Regular.ttf */; };
+		F72B0CC829F8A27300A1D75B /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F72B0CC329F8A27200A1D75B /* Comfortaa-SemiBold.ttf */; };
+		F72B0CC929F8A27300A1D75B /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F72B0CC429F8A27200A1D75B /* Comfortaa-Medium.ttf */; };
+		F72B0CCA29F8A27300A1D75B /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F72B0CC529F8A27200A1D75B /* Comfortaa-Light.ttf */; };
+		F72B0CCB29F8A27300A1D75B /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F72B0CC629F8A27300A1D75B /* Comfortaa-Bold.ttf */; };
 		F73DE39529F19A08005A358A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DE39429F19A08005A358A /* AppDelegate.swift */; };
 		F73DE39729F19A08005A358A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DE39629F19A08005A358A /* SceneDelegate.swift */; };
 		F73DE39E29F19A0B005A358A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73DE39D29F19A0B005A358A /* Assets.xcassets */; };
@@ -53,7 +73,27 @@
 		909D4751C1D20AF09916DE1F /* Pods-MarvelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelApp.debug.xcconfig"; path = "Target Support Files/Pods-MarvelApp/Pods-MarvelApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DB54C9ABAFD82404B080EA1B /* Pods-MarvelApp-MarvelAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelApp-MarvelAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MarvelApp-MarvelAppUITests/Pods-MarvelApp-MarvelAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F4FCA3EEF3AC639F70675C92 /* Pods-MarvelAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MarvelAppTests/Pods-MarvelAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F718054029F8C412008EE177 /* UserTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTextField.swift; sourceTree = "<group>"; };
 		F71853A329F6FE4F00DDE5F2 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		F72B0C9C29F88C9F00A1D75B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F72B0C9E29F88D2000A1D75B /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		F72B0CA329F88F6F00A1D75B /* AMShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMShape.swift; sourceTree = "<group>"; };
+		F72B0CA529F88F7900A1D75B /* AMShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMShadow.swift; sourceTree = "<group>"; };
+		F72B0CA729F88F8100A1D75B /* AMBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMBorder.swift; sourceTree = "<group>"; };
+		F72B0CAD29F8942100A1D75B /* AMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMTextField.swift; sourceTree = "<group>"; };
+		F72B0CAF29F8948400A1D75B /* AMLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMLabel.swift; sourceTree = "<group>"; };
+		F72B0CB129F8949F00A1D75B /* AMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMView.swift; sourceTree = "<group>"; };
+		F72B0CB329F894B100A1D75B /* AMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMButton.swift; sourceTree = "<group>"; };
+		F72B0CB629F8962400A1D75B /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		F72B0CB929F8964800A1D75B /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		F72B0CBB29F8965200A1D75B /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
+		F72B0CBD29F8965E00A1D75B /* GenericTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTextField.swift; sourceTree = "<group>"; };
+		F72B0CBF29F8969900A1D75B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F72B0CC229F8A27200A1D75B /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		F72B0CC329F8A27200A1D75B /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
+		F72B0CC429F8A27200A1D75B /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Medium.ttf"; sourceTree = "<group>"; };
+		F72B0CC529F8A27200A1D75B /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		F72B0CC629F8A27300A1D75B /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		F73DE39129F19A08005A358A /* MarvelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73DE39429F19A08005A358A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F73DE39629F19A08005A358A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +176,7 @@
 		F718539E29F6FDA500DDE5F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F72B0CC129F8A24700A1D75B /* Fonts */,
 				F73DE39D29F19A0B005A358A /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -144,6 +185,7 @@
 		F718539F29F6FDC600DDE5F2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F72B0C9B29F88C8900A1D75B /* Register */,
 				F79F427F29F771F10072B4B7 /* Authentication */,
 				F71853A029F6FDDF00DDE5F2 /* Onboarding */,
 			);
@@ -158,6 +200,111 @@
 				F79F427D29F75E4A0072B4B7 /* OnboardingViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F72B0C9B29F88C8900A1D75B /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				F72B0C9C29F88C9F00A1D75B /* RegisterViewController.swift */,
+				F72B0C9E29F88D2000A1D75B /* Register.storyboard */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		F72B0CA029F88F2400A1D75B /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				F72B0CA129F88F4E00A1D75B /* CustomUI */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		F72B0CA129F88F4E00A1D75B /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				F72B0CB829F8963300A1D75B /* TextFields */,
+				F72B0CB529F8961000A1D75B /* Buttons */,
+				F72B0CA229F88F5900A1D75B /* General */,
+				F72B0CAC29F8939700A1D75B /* AMButton */,
+				F72B0CAA29F8937900A1D75B /* AMView */,
+				F72B0CAB29F8938000A1D75B /* AMLabel */,
+				F72B0CA929F8936500A1D75B /* AMTextField */,
+				F72B0CBF29F8969900A1D75B /* ContentView.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		F72B0CA229F88F5900A1D75B /* General */ = {
+			isa = PBXGroup;
+			children = (
+				F72B0CA329F88F6F00A1D75B /* AMShape.swift */,
+				F72B0CA529F88F7900A1D75B /* AMShadow.swift */,
+				F72B0CA729F88F8100A1D75B /* AMBorder.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		F72B0CA929F8936500A1D75B /* AMTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F72B0CAD29F8942100A1D75B /* AMTextField.swift */,
+			);
+			path = AMTextField;
+			sourceTree = "<group>";
+		};
+		F72B0CAA29F8937900A1D75B /* AMView */ = {
+			isa = PBXGroup;
+			children = (
+				F72B0CB129F8949F00A1D75B /* AMView.swift */,
+			);
+			path = AMView;
+			sourceTree = "<group>";
+		};
+		F72B0CAB29F8938000A1D75B /* AMLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F72B0CAF29F8948400A1D75B /* AMLabel.swift */,
+			);
+			name = AMLabel;
+			sourceTree = "<group>";
+		};
+		F72B0CAC29F8939700A1D75B /* AMButton */ = {
+			isa = PBXGroup;
+			children = (
+				F72B0CB329F894B100A1D75B /* AMButton.swift */,
+			);
+			path = AMButton;
+			sourceTree = "<group>";
+		};
+		F72B0CB529F8961000A1D75B /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F72B0CB629F8962400A1D75B /* ActionButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F72B0CB829F8963300A1D75B /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				F72B0CB929F8964800A1D75B /* PasswordTextField.swift */,
+				F72B0CBB29F8965200A1D75B /* EmailTextField.swift */,
+				F72B0CBD29F8965E00A1D75B /* GenericTextField.swift */,
+				F718054029F8C412008EE177 /* UserTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		F72B0CC129F8A24700A1D75B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F72B0CC629F8A27300A1D75B /* Comfortaa-Bold.ttf */,
+				F72B0CC529F8A27200A1D75B /* Comfortaa-Light.ttf */,
+				F72B0CC429F8A27200A1D75B /* Comfortaa-Medium.ttf */,
+				F72B0CC229F8A27200A1D75B /* Comfortaa-Regular.ttf */,
+				F72B0CC329F8A27200A1D75B /* Comfortaa-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		F73DE38829F19A08005A358A = {
@@ -185,6 +332,7 @@
 		F73DE39329F19A08005A358A /* MarvelApp */ = {
 			isa = PBXGroup;
 			children = (
+				F72B0CA029F88F2400A1D75B /* DesignSystem */,
 				F79F427A29F75BBA0072B4B7 /* Models */,
 				F718539F29F6FDC600DDE5F2 /* Presentation */,
 				F718539E29F6FDA500DDE5F2 /* Resources */,
@@ -344,9 +492,15 @@
 			files = (
 				F71853A429F6FE4F00DDE5F2 /* Onboarding.storyboard in Resources */,
 				F79F428829F779A80072B4B7 /* Main.storyboard in Resources */,
+				F72B0CC829F8A27300A1D75B /* Comfortaa-SemiBold.ttf in Resources */,
 				F73DE3A129F19A0B005A358A /* LaunchScreen.storyboard in Resources */,
+				F72B0CCA29F8A27300A1D75B /* Comfortaa-Light.ttf in Resources */,
+				F72B0CCB29F8A27300A1D75B /* Comfortaa-Bold.ttf in Resources */,
+				F72B0CC729F8A27300A1D75B /* Comfortaa-Regular.ttf in Resources */,
 				F73DE39E29F19A0B005A358A /* Assets.xcassets in Resources */,
 				F79F428329F772420072B4B7 /* Login.storyboard in Resources */,
+				F72B0CC929F8A27300A1D75B /* Comfortaa-Medium.ttf in Resources */,
+				F72B0C9F29F88D2000A1D75B /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,13 +628,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72B0CA429F88F6F00A1D75B /* AMShape.swift in Sources */,
+				F72B0CA829F88F8100A1D75B /* AMBorder.swift in Sources */,
+				F72B0CB229F8949F00A1D75B /* AMView.swift in Sources */,
 				F79F428129F772300072B4B7 /* LoginViewController.swift in Sources */,
 				F79F427E29F75E4A0072B4B7 /* OnboardingViewController.swift in Sources */,
+				F72B0CB429F894B100A1D75B /* AMButton.swift in Sources */,
+				F72B0CC029F8969900A1D75B /* ContentView.swift in Sources */,
+				F72B0CBA29F8964800A1D75B /* PasswordTextField.swift in Sources */,
 				F79F427929F7559E0072B4B7 /* OnboardingCollectionViewCell.swift in Sources */,
+				F72B0CB729F8962400A1D75B /* ActionButton.swift in Sources */,
+				F72B0C9D29F88C9F00A1D75B /* RegisterViewController.swift in Sources */,
+				F718054129F8C412008EE177 /* UserTextField.swift in Sources */,
 				F73DE39529F19A08005A358A /* AppDelegate.swift in Sources */,
+				F72B0CB029F8948400A1D75B /* AMLabel.swift in Sources */,
+				F72B0CBE29F8965E00A1D75B /* GenericTextField.swift in Sources */,
+				F72B0CAE29F8942100A1D75B /* AMTextField.swift in Sources */,
 				F79F428529F7799A0072B4B7 /* ViewController.swift in Sources */,
+				F72B0CBC29F8965200A1D75B /* EmailTextField.swift in Sources */,
 				F79F427C29F75BCA0072B4B7 /* OnboardingSlide.swift in Sources */,
 				F73DE39729F19A08005A358A /* SceneDelegate.swift in Sources */,
+				F72B0CA629F88F7900A1D75B /* AMShadow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
