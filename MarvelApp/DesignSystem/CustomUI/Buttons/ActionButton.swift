@@ -19,6 +19,7 @@ import UIKit
         
         self.shape_cornerRadius = 8
         self.setTitleColor(.white, for: .normal)
+        self.backgroundColor = .MVL_red
         self.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
     }
 }

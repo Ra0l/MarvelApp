@@ -38,7 +38,7 @@ class OnboardingViewController: UIViewController{
         
         pageControl.numberOfPages = arrslides.count
         
-        
+        btnNext.backgroundColor = .MVL_red
     }
 
     @IBAction func btnNextAction(_ sender: Any) {
