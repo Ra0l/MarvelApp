@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7827DF629F9E8E400755FE1 /* MUIKitColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7827DF529F9E8E400755FE1 /* MUIKitColor.swift */; };
 		F7D14BD429F99CCF00624F6E /* MUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F7D14BD329F99CCF00624F6E /* MUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7D14BE129F99CF100624F6E /* MUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D14BE029F99CF100624F6E /* MUIKit.swift */; };
 		F7D14BE629F9A61000624F6E /* MButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D14BE529F9A61000624F6E /* MButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7827DF529F9E8E400755FE1 /* MUIKitColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUIKitColor.swift; sourceTree = "<group>"; };
 		F7D14BD029F99CCF00624F6E /* MUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D14BD329F99CCF00624F6E /* MUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUIKit.h; sourceTree = "<group>"; };
 		F7D14BE029F99CF100624F6E /* MUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUIKit.swift; sourceTree = "<group>"; };
@@ -30,6 +32,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7827DF329F9E88D00755FE1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F7827DF429F9E8C200755FE1 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				F7827DF529F9E8E400755FE1 /* MUIKitColor.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		F7D14BC629F99CCF00624F6E = {
 			isa = PBXGroup;
 			children = (
@@ -49,6 +66,8 @@
 		F7D14BD229F99CCF00624F6E /* MUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F7827DF429F9E8C200755FE1 /* Colors */,
+				F7827DF329F9E88D00755FE1 /* Extensions */,
 				F7D14BE429F9A5BB00624F6E /* Component */,
 				F7D14BE029F99CF100624F6E /* MUIKit.swift */,
 				F7D14BD329F99CCF00624F6E /* MUIKit.h */,
@@ -146,6 +165,7 @@
 			files = (
 				F7D14BE129F99CF100624F6E /* MUIKit.swift in Sources */,
 				F7D14BE629F9A61000624F6E /* MButton.swift in Sources */,
+				F7827DF629F9E8E400755FE1 /* MUIKitColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
